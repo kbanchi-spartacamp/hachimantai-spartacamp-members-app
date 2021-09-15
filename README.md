@@ -5,7 +5,7 @@
 ## 開発手順
 
 ```
-$ git clone https://github.com/kbanchi-spartacamp/hachimantai-spartacamp-members-app
+$ git clone git@github.com:kbanchi-spartacamp/hachimantai-spartacamp-members-app.git
 $ cd hachimantai-spartacamp-members-app
 $ git switch develop
 $ docker run --rm \
