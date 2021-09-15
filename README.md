@@ -17,3 +17,9 @@ $ cp .env.example .env
 $ sail up -d
 $ sail artisan key:generate
 ```
+
+### 画面URL
+
+* [ログイン画面](http://localhost/login)
+* [サインアップ画面](http://localhost/sign-up)
+
