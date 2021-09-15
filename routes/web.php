@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/login', [
     App\Http\Controllers\LoginController::class, 'login'
 ]);
+
+Route::get('/sign-up', [
+    App\Http\Controllers\SignUpController::class, 'signup'
+]);

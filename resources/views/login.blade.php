@@ -16,7 +16,7 @@
 <body class="text-center">
     <main class="form-signin">
         <form action="#" method="POST">
-            <img class="mb-4" alt="futsal" src="./images/arinchan.jpeg" width="150px" height="150px">
+            <img class="mb-4" alt="arinchan" src="./images/arinchan.jpeg" width="150px" height="150px">
             <h1 class="h3 mb-3 fw-normal">Login</h1>
             <label for="loginName" class="visually-hidden">Name</label>
             <input name="username" type="text" id="loginName" class="form-control" placeholder="Name" required
