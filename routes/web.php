@@ -28,3 +28,15 @@ Route::get('/sign-up', [
 Route::get('/car-info',[
     App\Http\Controllers\CarController::class, 'info'
 ]);
+
+    Route::get('/controller/recruit', [
+    App\Http\Controllers\RecruitController::class, 'recruit'
+]);
+
+Route::get('hot-spring', [
+    App\Http\Controllers\HotSpringController::class, 'hotspring'
+]);
+
+Route::get('/wifi-spot', [
+    App\Http\Controllers\WifiSpotController::class, 'index'
+]);
