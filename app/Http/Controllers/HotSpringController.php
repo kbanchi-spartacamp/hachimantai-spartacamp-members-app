@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WifiSpotController extends Controller
+class HotSpringController extends Controller
 {
     public function hotspring()
     {
