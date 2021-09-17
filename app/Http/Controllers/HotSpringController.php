@@ -6,11 +6,8 @@ use Illuminate\Http\Request;
 
 class HotSpringController extends Controller
 {
-    public function hot_spring($hot_spring)
+    public function hotspring()
     {
-        return view('hotspring', [
-            'hot_spring' => $hot_spring
-        ]);
+        return view('hot-spring.hotspring');
     }
-
 }
