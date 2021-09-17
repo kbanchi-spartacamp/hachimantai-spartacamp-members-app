@@ -4,13 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HotSpringController extends Controller
+class WifiSpotController extends Controller
 {
-    public function hot_spring($hot_spring)
+    public function index()
     {
-        return view('hotspring', [
-            'hot_spring' => $hot_spring
-        ]);
+        return view('hot-spring.hotspring');
     }
-
 }

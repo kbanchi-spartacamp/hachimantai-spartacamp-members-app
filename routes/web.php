@@ -25,7 +25,7 @@ Route::get('/sign-up', [
     App\Http\Controllers\SignUpController::class, 'signup'
 ]);
 
-Route::get('/controller/hot-spring/{hot-spring}', [
+Route::get('/hot-spring', [
     App\Http\Controllers\HotSpringController::class, 'hot_spring'
 ]);
 Route::get('/wifi-spot', [
