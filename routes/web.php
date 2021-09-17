@@ -24,3 +24,7 @@ Route::get('/login', [
 Route::get('/sign-up', [
     App\Http\Controllers\SignUpController::class, 'signup'
 ]);
+
+Route::get('/car-info',[
+    App\Http\Controllers\CarController::class, 'info'
+]);
