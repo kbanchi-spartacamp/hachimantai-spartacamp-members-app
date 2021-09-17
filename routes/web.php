@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 Route::get('/login', [
@@ -27,4 +27,7 @@ Route::get('/sign-up', [
 
 Route::get('/controller/hot-spring/{hot-spring}', [
     App\Http\Controllers\HotSpringController::class, 'hot_spring'
+]);
+Route::get('/wifi-spot', [
+    App\Http\Controllers\WifiSpotController::class, 'index'
 ]);
