@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: inherit;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+img {
+    border-radius: 10%;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+div {
+    text-align: center;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
