@@ -24,3 +24,7 @@ Route::get('/login', [
 Route::get('/sign-up', [
     App\Http\Controllers\SignUpController::class, 'signup'
 ]);
+
+Route::get('/wifi-spot', [
+    App\Http\Controllers\WifiSpotController::class, 'index'
+]);
