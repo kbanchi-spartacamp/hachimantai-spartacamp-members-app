@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class WifiSpotController extends Controller
 {
-    public function index()
+    public function hotspring()
     {
         return view('hot-spring.hotspring');
     }
