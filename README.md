@@ -28,6 +28,7 @@ $ sail artisan key:generate
 
 * [ログイン画面](http://localhost/login)
 * [サインアップ画面](http://localhost/sign-up)
+* [TOP画面](http://localhost/top)
 * [Wi-Fiスポット画面](http://localhost/wifi-spot)
 * [温泉画面](http://localhost/hot-spring)
 * [求人情報画面](http://localhost/controller/recruit)
