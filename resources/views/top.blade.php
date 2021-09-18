@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Wi-Fi Spot</title>
+    <title>Top</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -26,23 +26,7 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    @foreach ($wifispots as $wifispot)
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <h4>{{ $wifispot->name }}</h4>
-                                <img src="{{ $wifispot->image_url }}" alt="Sa" width="100%" height="225">
-                                <div class="card-body">
-                                    <p class="card-text">{{ $wifispot->description }}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="{{ $wifispot->hp_url }}" class="btn btn-sm btn-outline-secondary"
-                                                target="_blank">公式HP</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
+                    Welcome to 八幡平スパルタキャンプ!!
                 </div>
             </div>
         </div>

@@ -25,6 +25,10 @@ Route::get('/sign-up', [
     App\Http\Controllers\SignUpController::class, 'signup'
 ]);
 
+Route::get('/top', [
+    App\Http\Controllers\TopController::class, 'top'
+]);
+
 Route::get('/car-info', [
     App\Http\Controllers\CarController::class, 'info'
 ]);
