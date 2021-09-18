@@ -27,90 +27,23 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/salad_farm.jpeg" alt="Sa" width="100%" height="225">
-                            <div class="card-body">
-                                <p class="card-text">サラダファームです。美味しいソフトクリームが食べれます。店員さんが可愛いです。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://salad-farm.jp/" class="btn btn-sm btn-outline-secondary"
-                                            target="_blank">公式HP</a>
+                    @foreach ($wifispots as $wifispot)
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <h4>{{ $wifispot->name }}</h4>
+                                <img src="{{ $wifispot->image_url }}" alt="Sa" width="100%" height="225">
+                                <div class="card-body">
+                                    <p class="card-text">{{ $wifispot->description }}</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="{{ $wifispot->hp_url }}" class="btn btn-sm btn-outline-secondary"
+                                                target="_blank">公式HP</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/salad_farm.jpeg" alt="Sa" width="100%" height="225">
-                            <div class="card-body">
-                                <p class="card-text">サラダファームです。美味しいソフトクリームが食べれます。店員さんが可愛いです。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://salad-farm.jp/" class="btn btn-sm btn-outline-secondary"
-                                            target="_blank">公式HP</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/salad_farm.jpeg" alt="Sa" width="100%" height="225">
-                            <div class="card-body">
-                                <p class="card-text">サラダファームです。美味しいソフトクリームが食べれます。店員さんが可愛いです。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://salad-farm.jp/" class="btn btn-sm btn-outline-secondary"
-                                            target="_blank">公式HP</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/salad_farm.jpeg" alt="Sa" width="100%" height="225">
-                            <div class="card-body">
-                                <p class="card-text">サラダファームです。美味しいソフトクリームが食べれます。店員さんが可愛いです。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://salad-farm.jp/" class="btn btn-sm btn-outline-secondary"
-                                            target="_blank">公式HP</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/salad_farm.jpeg" alt="Sa" width="100%" height="225">
-                            <div class="card-body">
-                                <p class="card-text">サラダファームです。美味しいソフトクリームが食べれます。店員さんが可愛いです。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://salad-farm.jp/" class="btn btn-sm btn-outline-secondary"
-                                            target="_blank">公式HP</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/salad_farm.jpeg" alt="Sa" width="100%" height="225">
-                            <div class="card-body">
-                                <p class="card-text">サラダファームです。美味しいソフトクリームが食べれます。店員さんが可愛いです。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://salad-farm.jp/" class="btn btn-sm btn-outline-secondary"
-                                            target="_blank">公式HP</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

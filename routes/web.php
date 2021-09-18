@@ -25,11 +25,11 @@ Route::get('/sign-up', [
     App\Http\Controllers\SignUpController::class, 'signup'
 ]);
 
-Route::get('/car-info',[
+Route::get('/car-info', [
     App\Http\Controllers\CarController::class, 'info'
 ]);
 
-    Route::get('/controller/recruit', [
+Route::get('/controller/recruit', [
     App\Http\Controllers\RecruitController::class, 'recruit'
 ]);
 
