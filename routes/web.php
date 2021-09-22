@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Recruit;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +49,5 @@ Route::get('/wifi-spots', [
 Route::get('/restaurants', [
     App\Http\Controllers\RestaurantController::class, 'index'
 ]);
+
+Route::resource('recruits', App\Http\Controllers\RecruitController::class);
