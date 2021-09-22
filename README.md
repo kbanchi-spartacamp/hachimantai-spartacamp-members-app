@@ -8,35 +8,6 @@
   * スーパーやドラッグストアってどこかな？
 * これを開発して、部屋のみんなでLaravelの学習をしよう！！
 
-## 開発手順
+## 開発
+開発に参加したい方は[こちら](./documents/00_init/README.md)
 
-```
-$ git clone git@github.com:kbanchi-spartacamp/hachimantai-spartacamp-members-app.git
-$ cd hachimantai-spartacamp-members-app
-$ git switch develop
-$ docker run --rm \
-  -v $(pwd):/opt \
-  -w /opt \
-  laravelsail/php80-composer:latest \
-  bash -c "composer install"
-$ cp .env.example .env
-$ sail up -d
-$ sail artisan key:generate
-```
-
-## 画面URL
-
-* [ログイン画面](http://localhost/login)
-* [サインアップ画面](http://localhost/sign-up)
-* [TOP画面](http://localhost/top)
-* [Wi-Fiスポット画面](http://localhost/wifi-spots)
-* [温泉画面](http://localhost/hot-spring)
-* [求人情報画面](http://localhost/controller/recruit)
-* 飲食店情報
-* スーパー情報
-* コインランドリー情報
-* ガソリンスタンド情報
-* 盛岡情報
-* 車(レンタカー・リース)情報
-* 賃貸・シェアハウス
-* 観光地
