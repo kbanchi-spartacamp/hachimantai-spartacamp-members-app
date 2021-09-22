@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Recruit;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,3 +45,5 @@ Route::get('hot-spring', [
 Route::get('/wifi-spots', [
     App\Http\Controllers\WifiSpotController::class, 'index'
 ]);
+
+Route::resource('recruits', App\Http\Controllers\RecruitController::class);
