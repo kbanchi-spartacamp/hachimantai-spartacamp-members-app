@@ -6,7 +6,7 @@
                     <a class="nav-link" href="/wifi-spots">
                         Wi-Fiスポット
                     </a>
-                    <a class="nav-link" href="/host-spring">
+                    <a class="nav-link" href="/hot-spring">
                         温泉
                     </a>
                 </li>
