@@ -9,5 +9,4 @@
 * これを開発して、部屋のみんなでLaravelの学習をしよう！！
 
 ## 開発
-開発に参加したい方は[こちら](./documents/00_init/README.md)
-
+開発に参加したい方は[こちら](./documents/README.md)
