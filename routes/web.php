@@ -44,3 +44,7 @@ Route::get('hot-spring', [
 Route::get('/wifi-spots', [
     App\Http\Controllers\WifiSpotController::class, 'index'
 ]);
+
+Route::get('/restaurants', [
+    App\Http\Controllers\RestaurantController::class, 'index'
+]);
