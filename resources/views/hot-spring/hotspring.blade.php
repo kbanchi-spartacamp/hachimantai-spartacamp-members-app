@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="{{ asset('./css/hot-spring.css') }}">
 
     <div class="container">
+        <div class="border-bottom">
+            <h1 class="h2"> 温泉</h1>
+        </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             @foreach ($hotsprings as $hotspring)
                 <div class="col">
