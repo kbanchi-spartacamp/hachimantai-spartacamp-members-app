@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(WifiSpotSeeder::class);
         $this->call(RestaurantSeeder::class);
         $this->call(HotspringSeeder::class);
+        $this->call(CarSeeder::class);
     }
 }

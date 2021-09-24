@@ -30,8 +30,8 @@ Route::get('/top', [
     App\Http\Controllers\TopController::class, 'top'
 ]);
 
-Route::get('/car-info', [
-    App\Http\Controllers\CarController::class, 'info'
+Route::get('/car', [
+    App\Http\Controllers\CarController::class, 'index'
 ]);
 
 Route::get('/controller/recruit', [

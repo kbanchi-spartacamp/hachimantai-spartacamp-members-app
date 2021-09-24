@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Car;
 use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
-    public function info(){
-        return view ('car-info.car');
+    public function index()
+    {
+        $cars = car::all();
+        $data = [
+            'cars' => $cars,
+        ];
+        return view('car.car', $data);
     }
 }
