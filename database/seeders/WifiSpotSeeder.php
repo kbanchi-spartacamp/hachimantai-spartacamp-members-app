@@ -39,6 +39,14 @@ class WifiSpotSeeder extends Seeder
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
+            [
+                'name' => '大更駅待合室',
+                'description' => '起業家支援センターの目の前',
+                'image_url' => 'https://stat.ameba.jp/user_images/20190603/18/ttm123210/3a/26/j/o1024076814421681551.jpg',
+                'hp_url' => 'https://www.jreast.co.jp/estation/stations/341.html',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
         ];
         DB::table('wifi_spots')->insert($param);
     }

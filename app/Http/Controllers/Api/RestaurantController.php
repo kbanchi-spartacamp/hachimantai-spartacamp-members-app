@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\WifiSpot;
+use App\Models\Restaurant;
 use Illuminate\Http\Request;
 
-class WifiSpotController extends Controller
+class RestaurantController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class WifiSpotController extends Controller
      */
     public function index()
     {
-        $wifispots = WifiSpot::all();
-        return $wifispots;
+        $restaurants = Restaurant::all();
+        return $restaurants;
     }
 
     /**
@@ -27,16 +27,16 @@ class WifiSpotController extends Controller
      */
     public function store(Request $request)
     {
-        $wifispot = new WifiSpot();
+        $restaurant = new Restaurant();
 
-        $wifispot->name = $request->name;
-        $wifispot->description = $request->description;
-        $wifispot->image_url = $request->image_url;
-        $wifispot->hp_url = $request->hp_url;
+        $restaurant->name = $request->name;
+        $restaurant->description = $request->description;
+        $restaurant->image_url = $request->image_url;
+        $restaurant->hp_url = $request->hp_url;
 
-        $wifispot->save();
+        $restaurant->save();
 
-        return $wifispot;
+        return $restaurant;
     }
 
     /**
@@ -47,8 +47,8 @@ class WifiSpotController extends Controller
      */
     public function show($id)
     {
-        $wifispot = WifiSpot::find($id);
-        return $wifispot;
+        $restaurant = Restaurant::find($id);
+        return $restaurant;
     }
 
     /**
@@ -60,16 +60,16 @@ class WifiSpotController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $wifispot = WifiSpot::find($id);
+        $restaurant = Restaurant::find($id);
 
-        $wifispot->name = $request->name;
-        $wifispot->description = $request->description;
-        $wifispot->image_url = $request->image_url;
-        $wifispot->hp_url = $request->hp_url;
+        $restaurant->name = $request->name;
+        $restaurant->description = $request->description;
+        $restaurant->image_url = $request->image_url;
+        $restaurant->hp_url = $request->hp_url;
 
-        $wifispot->save();
+        $restaurant->save();
 
-        return $wifispot;
+        return $restaurant;
     }
 
     /**
@@ -80,8 +80,8 @@ class WifiSpotController extends Controller
      */
     public function destroy($id)
     {
-        $wifispot = WifiSpot::find($id);
-        $wifispot->delete();
-        return $wifispot;
+        $restaurant = Restaurant::find($id);
+        $restaurant->delete();
+        return $restaurant;
     }
 }
