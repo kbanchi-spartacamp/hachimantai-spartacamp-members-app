@@ -13,11 +13,3 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::group(['middleware' => ['api']], function () {
-    Route::apiResource('wifi-spots', App\Http\Controllers\Api\WifiSpotController::class);
-});
-
-Route::group(['middleware' => ['api']], function () {
-    Route::apiResource('restaurants', App\Http\Controllers\Api\RestaurantController::class);
-});
