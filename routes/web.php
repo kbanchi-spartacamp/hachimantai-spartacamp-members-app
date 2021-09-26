@@ -2,6 +2,7 @@
 
 use App\Models\Recruit;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,40 +15,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/login');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/login', [
-    App\Http\Controllers\LoginController::class, 'login'
-]);
+Route::redirect('/', '/top', 302);
 
-Route::get('/sign-up', [
-    App\Http\Controllers\SignUpController::class, 'signup'
-]);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/top', [
     App\Http\Controllers\TopController::class, 'top'
-]);
+])->middleware('auth');;
 
 Route::get('/car', [
     App\Http\Controllers\CarController::class, 'index'
-]);
+])->middleware('auth');;
 
 Route::get('/controller/recruit', [
     App\Http\Controllers\RecruitController::class, 'recruit'
-]);
+])->middleware('auth');;
 
 Route::get('hot-spring', [
     App\Http\Controllers\HotSpringController::class, 'hotspring'
-]);
+])->middleware('auth');;
 
 Route::get('/wifi-spots', [
     App\Http\Controllers\WifiSpotController::class, 'index'
-]);
+])->middleware('auth');;
 
 Route::get('/restaurants', [
     App\Http\Controllers\RestaurantController::class, 'index'
-]);
+])->middleware('auth');;
 
-Route::resource('recruits', App\Http\Controllers\RecruitController::class);
+Route::resource('recruits', App\Http\Controllers\RecruitController::class)->middleware('auth');;

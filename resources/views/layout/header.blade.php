@@ -4,8 +4,14 @@
         <nav class="my-2 my-md-0 me-md-3">
             <span class="p-2 text-dark"></span>
         </nav>
-        <form action="/logout" method="post">
-            <input class="btn btn-outline-primary" type="submit" value="ログアウト" />
-        </form>
+        <div>
+            <a class="btn btn-outline-primary" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </div>
     </header>
 @endsection
