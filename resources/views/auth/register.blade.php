@@ -64,6 +64,7 @@
             </div>
             <div>
                 <input type="submit" class="w-100 btn btn-lg btn-primary" value="Sign Up">
+                <a class="w-100 btn btn-lg btn-link" href="{{ route('login') }}">Back</a>
             </div>
         </form>
     </main>
