@@ -21,6 +21,8 @@
                                     <div class="btn-group">
                                         <a href="{{ $wifispot->hp_url }}" class="btn btn-sm btn-outline-secondary"
                                             target="_blank">公式HP</a>
+                                        <a href="/wifi-spots/{{ $wifispot->id }}/map"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">地図</a>
                                     </div>
                                 </div>
                             </div>

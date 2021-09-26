@@ -45,6 +45,10 @@ Route::get('/wifi-spots', [
     App\Http\Controllers\WifiSpotController::class, 'index'
 ])->middleware('auth');;
 
+Route::get('/wifi-spots/{id}/map', [
+    App\Http\Controllers\WifiSpotController::class, 'map'
+])->middleware('auth');;
+
 Route::get('/restaurants', [
     App\Http\Controllers\RestaurantController::class, 'index'
 ])->middleware('auth');;
