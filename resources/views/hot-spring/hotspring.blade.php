@@ -1,5 +1,5 @@
 @extends('layout.common')
-@section('title', 'Hot-spring Spot')
+@section('title', 'Hot-spring ')
 
 @include('layout.header')
 
