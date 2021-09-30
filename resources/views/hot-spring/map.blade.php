@@ -1,12 +1,12 @@
 @extends('layout.common')
-@section('title', Hot-Spring Map')
+@section('title', 'Hot-spring Map')
 
 @include('layout.header')
 
 @section('content')
     <div class="container">
         <div class="border-bottom">
-            <h1 class="h2">温泉 Map ({{ $hotspring->name }})</h1>
+            <h1 class="h2">温泉Map ({{ $hotspring->name }})</h1>
         </div>
         @if (!empty($hotspring))
             <div id="map" style="height:50vh;"></div>
