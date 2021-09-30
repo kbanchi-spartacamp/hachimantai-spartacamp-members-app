@@ -42,7 +42,7 @@ Route::get('hot-springs', [
 ])->middleware('auth');;
 
 Route::get('/hot-springs/{id}/map', [
-    App\Http\Controllers\HotspringController::class, 'map'
+    App\Http\Controllers\HotSpringController::class, 'map'
 ])->middleware('auth');;
 
 Route::get('/wifi-spots', [
