@@ -37,12 +37,16 @@ Route::get('/controller/recruit', [
     App\Http\Controllers\RecruitController::class, 'recruit'
 ])->middleware('auth');;
 
-Route::get('hot-spring', [
-    App\Http\Controllers\HotSpringController::class, 'hotspring'
+Route::get('hot-springs', [
+    App\Http\Controllers\HotSpringController::class, 'index'
+])->middleware('auth');;
+
+Route::get('/hot-springs/{id}/map', [
+    App\Http\Controllers\HotspringController::class, 'map'
 ])->middleware('auth');;
 
 Route::get('/wifi-spots', [
-    App\Http\Controllers\WifiSpotController::class, 'index'
+    App\Http\Controllers\WifiSpotController::class, 'index' 
 ])->middleware('auth');;
 
 Route::get('/wifi-spots/{id}/map', [

@@ -1,0 +1,4 @@
+###温泉一覧
+
+GET /api/wifi-spot HTTP/1.1
+Host: hachimantai-spartacamp-admin.herokuapp.com
