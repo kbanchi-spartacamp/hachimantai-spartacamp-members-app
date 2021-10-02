@@ -1,27 +1,22 @@
 @section('header')
-    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <a href="/top" class="h5 my-0 me-md-auto fw-normal navbar-brand">八幡平スパルタキャンプWeb</a>
-        <nav class="my-2 my-md-0 me-md-3">
-            <span class="p-2 text-dark"></span>
-        </nav>
-        <div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                    document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
-                    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo" href="/top">八幡平Web参加者</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/top">Home <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0" method="POST" action="{{ route('logout') }}">
+                @csrf
+                <span class="mr-sm-2">{{ Auth::user()->name }}</span>
+                <input class="btn btn-outline-danger my-2 my-sm-0" type="submit" value="{{ __('Logout') }}">
+            </form>
         </div>
-    </header>
+    </nav>
 @endsection
